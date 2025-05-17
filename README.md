@@ -1,12 +1,12 @@
 # Bright Money Assignment 
 
-## 📘 Overview
+##  Overview
 
 A Django-based credit card management system providing RESTful APIs for credit card applications, EMI schedules, loan management, and payments. It uses MongoDB for storage and Celery for asynchronous background tasks.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python 3.11  
 - Django 3.2.8  
@@ -16,7 +16,7 @@ A Django-based credit card management system providing RESTful APIs for credit c
 
 ---
 
-## ✨ Features
+##  Features
 
 - ✅ User registration with credit score calculation  
 - ✅ Credit card loan application & eligibility check  
@@ -28,15 +28,9 @@ A Django-based credit card management system providing RESTful APIs for credit c
 
 ---
 
-## ⚙️ Prerequisites
 
-- Python 3.11  
-- MongoDB instance (local or cloud)  
-- Git  
 
----
-
-## 🚀 Setup & Run (Single Terminal)
+## Setup & Run (Single Terminal)
 
 `````bash
 # 1. Clone the repository
@@ -81,9 +75,9 @@ gnome-terminal --tab -- bash -c "celery -A credit_card_system worker --loglevel=
 
 ---
 
-## 🔌 API Endpoints
+##  API Endpoints
 
-### 🔹 Register User  
+###  Register User  
 `POST /api/users/`
 ```json
 {
@@ -93,7 +87,7 @@ gnome-terminal --tab -- bash -c "celery -A credit_card_system worker --loglevel=
 }
 ```
 
-### 🔹 Apply for Loan  
+###  Apply for Loan  
 `POST /api/apply-loan/`
 ```json
 {
@@ -106,7 +100,7 @@ gnome-terminal --tab -- bash -c "celery -A credit_card_system worker --loglevel=
 }
 ```
 
-### 🔹 Make Payment  
+###  Make Payment  
 `POST /api/make-payment/`
 ```json
 {
@@ -115,12 +109,12 @@ gnome-terminal --tab -- bash -c "celery -A credit_card_system worker --loglevel=
 }
 ```
 
-### 🔹 View Statement  
+###  View Statement  
 `GET /api/get-statement/<loan_id>/`
 
 ---
 
-## 📊 Business Logic
+##  Business Logic
 
 ### ✅ Credit Score
 - Range: 300–900 based on CSV balance
@@ -142,7 +136,7 @@ gnome-terminal --tab -- bash -c "celery -A credit_card_system worker --loglevel=
 
 ---
 
-## 🧾 Project Structure
+##  Project Structure
 
 ```
 Django_Assign/
@@ -160,7 +154,7 @@ Django_Assign/
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 python manage.py test
@@ -168,7 +162,7 @@ python manage.py test
 
 
 
-## ⚠️ Developer Notes
+##  Developer Notes
 
 - MongoDB must be running
 - Celery required for async credit score & billing
